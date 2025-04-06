@@ -1,1 +1,1 @@
-# techncy
+# developer Sparsh Prachandia Jain

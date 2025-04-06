@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Asset/logo.png">
+    <title>Techncy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Loader -->
+    <div class="loader">
+        <h1>Techncy</h1>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">Techncy</div>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay">
+        <ul class="menu-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Template</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#pricing-section">Plans</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <h1>
+                <span>We Create</span>
+                <span>Digital</span>
+                <span>Experiences</span>
+            </h1>
+            <p>A cutting-edge digital agency focused on innovation, creativity, and delivering exceptional results for our clients.</p>
+            <a href="#contact" class="cta-btn">Get in Touch</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Our Services</span></h2>
+                <p>We offer comprehensive digital solutions tailored to meet your business needs and drive growth in the digital landscape.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Web Development</h3>
+                    <p>We create responsive, user-friendly websites that engage visitors and convert them into customers. Our development process ensures your website is fast, secure, and optimized for all devices.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Apps</h3>
+                    <p>Our team designs and develops native and cross-platform mobile applications that provide seamless user experiences across all devices and operating systems.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>We create intuitive and visually appealing interfaces that enhance user experiences and drive engagement with your digital products and services.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>From SEO and content marketing to paid advertising and social media campaigns, we develop comprehensive digital marketing strategies to increase your online visibility.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Brand Strategy</h3>
+                    <p>We help you build a strong brand identity that resonates with your target audience and differentiates you from competitors in the digital marketplace.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Analytics & Optimization</h3>
+                    <p>We analyze data and user behavior to optimize your digital assets for better performance, higher conversion rates, and improved ROI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing-section" id="pricing-section">
+        <div class="containerw">
+            <div class="pricing-header">
+                <h2>Choose Your Plan</h2>
+                <p>Select the perfect website solution for your business needs. All plans include expert design, responsive layouts, and ongoing support.</p>
+            </div>
+            
+            <div class="pricing-plans">
+                <!-- Basic (Static) Website Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3>BASIC WEBSITE</h3>
+                        <div class="pricing-card-price">$499<span>/one-time</span></div>
+                        <p class="pricing-card-subtitle">Perfect for small businesses</p>
+                    </div>
+                    <div class="pricing-card-body">
+                        <ul class="pricing-card-features">
+                            <li>1 Static Pages</li>
+                            <li>Responsive Design</li>
+                            <li>Contact Form</li>
+                            <li>SEO Optimization</li>
+                            <li>Social Media Integration</li>
+                            <li>1 Months of Support</li>
+                        </ul>
+                        <a class="pricing-card-button" data-plan="BASIC WEBSITE">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- Server Website Plan (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="pricing-card-header">
+                        <h3>SERVER WEBSITE</h3>
+                        <div class="pricing-card-price">$999<span>/one-time</span></div>
+                        <p class="pricing-card-subtitle">For growing businesses</p>
+                    </div>
+                    <div class="pricing-card-body">
+                        <ul class="pricing-card-features">
+                            <li>1 Dynamic Web App</li>
+                            <li>CMS Integration</li>
+                            <li>User Authentication</li>
+                            <li>Database Setup</li>
+                            <li>Advanced SEO Package</li>
+                            <li>Custom Admin Panel</li>
+                            <li>2 Months of Support</li>
+                        </ul>
+                        <a class="pricing-card-button" data-plan="SERVER WEBSITE">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- E-Commerce Website Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3>E-COMMERCE</h3>
+                        <div class="pricing-card-price">$1,899<span>/one-time</span></div>
+                        <p class="pricing-card-subtitle">Full online store solution</p>
+                    </div>
+                    <div class="pricing-card-body">
+                        <ul class="pricing-card-features">
+                            <li>Unlimited Products</li>
+                            <li>Payment Gateway Integration</li>
+                            <li>Inventory Management</li>
+                            <li>Customer Accounts</li>
+                            <li>Order Tracking System</li>
+                            <li>Advanced Analytics</li>
+                            <li>6 Months of Support</li>
+                        </ul>
+                        <a class="pricing-card-button" data-plan="E-COMMERCE">Get Started</a>
+                    </div>
+                </div>
+            </div>
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>Our Templates</span></h2>
+                <p>Explore our Templates of successful digital projects that will delivered outstanding results for our clients.</p>
+            </div>
+            <div class="work-grid">
+                <div class="work-item">
+                    <img src="/Asset/templates/landing-page-1.svg" alt="Project 1">
+                    <div class="work-overlay">
+                        <h3>Template 1</h3>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <img src="/Asset/templates/landing-page-4.svg" alt="Project 2">
+                    <div class="work-overlay">
+                        <h3>Template 2</h3>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <img src="/Asset/templates/landing-page-5.svg" alt="Project 3">
+                    <div class="work-overlay">
+                        <h3>Template 3</h3>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <img src="/Asset/templates/landing-page-6.svg" alt="Project 4">
+                    <div class="work-overlay">
+                        <h3>Template 4</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/Asset/bussiness.jpg" alt="About Techncy">
+                    <div class="shape"></div>
+                </div>
+                <div class="about-text">
+                    <h2><span>About Techncy</span></h2>
+                    <p>Techncy is a forward-thinking digital agency that combines creativity, technology, and strategic thinking to help businesses thrive in the digital world.</p>
+                    <p>Founded in 2025, we've grown into a team of passionate designers, developers, and digital marketers who are dedicated to delivering exceptional digital experiences that drive business growth.</p>
+                    <p>Our approach is collaborative and client-focused. We work closely with you to understand your business goals, challenges, and vision, then develop customized digital solutions that meet your specific needs.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>150+</h3>
+                            <p>Projects Expected</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>150+</h3>
+                            <p>Happy Clients Expected</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2><span>Get in Touch</span></h2>
+                    <p>Ready to start your next digital project? Contact us today to discuss how we can help your business grow in the digital landscape.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>UTTAR PRADESH, INDIA, ASIA</div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>spjainprachandia@gmail.com</div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>+91 XXXX-XXXX-44</div>
+                        </div>
+                    </div>
+                </div>
+                <div  class="contact-form">
+                    <form id="emailform" action="https://formsubmit.co/8cdda7154f52bf84318f93efa3ee9d9a" method="POST">
+                        <div class="selected-plan" id="selected-plan-display">
+                            Select a plan above to get started
+                        </div>
+                        <input type="hidden" id="selected-plan-input" name="selected_plan" value="">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="NAME" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="EMAIL" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" name="SUBJECT" id="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="MESSAGE" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Techncy</div>
+                <div class="social-links">
+                    <a href="https://x.com/Sparsh__Jain_?t=uOKc6mEh_pqjVqNgkyRSKQ&s=09"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/i_sparsh_i?igsh=ZDQ0ODU4cG03bnU0"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sparsh-prachandia-jain-941115317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2025 Techncy. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+        
