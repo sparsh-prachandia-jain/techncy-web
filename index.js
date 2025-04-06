@@ -866,7 +866,7 @@ document.querySelector('.canvas-container').appendChild(renderer.domElement);
 
 // Create particles
 const particlesGeometry = new THREE.BufferGeometry();
-const particlesCount = 500;
+const particlesCount = 800;
 
 const posArray = new Float32Array(particlesCount * 3);
 
