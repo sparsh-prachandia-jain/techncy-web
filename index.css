@@ -33,7 +33,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 70px;
+  margin: 10px 70px;
   position: fixed;
   width: calc(100vw - 140px);
   z-index: 100;
@@ -644,7 +644,7 @@ footer {
 
   header {
     padding: 20px 5vw;
-    margin: 20px 30px;
+    margin: 10px 30px;
     width: calc(100vw - 60px);
 
     box-shadow: 0 1px 10px 0 #00000024;
