@@ -106,7 +106,7 @@ function toggleMenu() {
       }
     });
   });
-  document.querySelectorAll('#mobile-menu a').forEach(link => {
+  document.querySelectorAll('.mobile-menu a').forEach(link => {
     link.addEventListener('click', function(e) {
       e.preventDefault();
       const targetId = this.getAttribute('href');
