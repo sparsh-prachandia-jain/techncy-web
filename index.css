@@ -646,11 +646,15 @@ footer {
   }
 
   header {
-   position: fixed;
-    top:0;
-   margin:0;
-   border-radius: 0;
-   width: 100%;
+    padding: 20px 5vw;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: calc(100vw - 60px);
+
+    box-shadow: 0 1px 10px 0 #00000024;
+
   }
 
   .footer-content {
@@ -678,7 +682,7 @@ footer {
 
   .mobile-menu {
     position: absolute;
-    top: 60px;
+    top: 120px;
     right: 20px;
     background: rgba(0, 0, 0, 0.236);
     backdrop-filter: blur(10px);
