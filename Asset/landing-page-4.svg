@@ -1,0 +1,79 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Background -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4158D0;stop-opacity:1" />
+      <stop offset="46%" style="stop-color:#C850C0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFCC70;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="600" fill="url(#grad1)"/>
+  
+  <!-- Content Container -->
+  <rect x="50" y="50" width="700" height="500" rx="20" fill="white" fill-opacity="0.95"/>
+  
+  <!-- Header -->
+  <text x="100" y="100" font-family="Arial" font-weight="bold" font-size="24" fill="#333333">wavely</text>
+  
+  <!-- Navigation -->
+  <text x="450" y="100" font-family="Arial" font-size="14" fill="#333333">Home</text>
+  <text x="510" y="100" font-family="Arial" font-size="14" fill="#777777">Features</text>
+  <text x="580" y="100" font-family="Arial" font-size="14" fill="#777777">Testimonials</text>
+  <text x="670" y="100" font-family="Arial" font-size="14" fill="#777777">Pricing</text>
+  
+  <!-- Main Content -->
+  <text x="100" y="180" font-family="Arial" font-weight="bold" font-size="36" fill="#333333">All your music.</text>
+  <text x="100" y="225" font-family="Arial" font-weight="bold" font-size="36" fill="#333333">One simple app.</text>
+  
+  <rect x="100" y="250" width="40" height="4" fill="#C850C0" rx="2"/>
+  
+  <text x="100" y="290" font-family="Arial" font-size="16" fill="#555555" width="300">Stream, discover, and share your favorite tracks with our intuitive music platform.</text>
+  
+  <!-- App Store Buttons -->
+  <rect x="100" y="330" width="150" height="50" rx="10" fill="#333333"/>
+  <text x="140" y="360" font-family="Arial" font-size="14" fill="white">App Store</text>
+  <circle cx="120" cy="355" r="12" fill="white"/>
+  
+  <rect x="270" y="330" width="150" height="50" rx="10" fill="#333333"/>
+  <text x="315" y="360" font-family="Arial" font-size="14" fill="white">Google Play</text>
+  <polygon points="290,347 290,363 300,355" fill="white"/>
+  
+  <!-- App Preview -->
+  <rect x="470" y="150" width="220" height="370" rx="20" fill="#FBFBFB" stroke="#EEEEEE" stroke-width="1"/>
+  
+  <!-- Phone Frame -->
+  <rect x="480" y="160" width="200" height="350" rx="15" fill="#333333"/>
+  <rect x="490" y="170" width="180" height="320" rx="5" fill="#222222"/>
+  
+  <!-- App Screen -->
+  <rect x="490" y="170" width="180" height="320" rx="5" fill="white"/>
+  
+  <!-- App UI Elements -->
+  <rect x="490" y="170" width="180" height="60" rx="5" fill="#4158D0"/>
+  <text x="510" y="205" font-family="Arial" font-size="14" fill="white">Now Playing</text>
+  
+  <circle cx="580" cy="260" r="40" fill="#EEEEEE"/>
+  <polygon points="570,250 570,270 595,260" fill="#C850C0"/>
+  
+  <rect x="510" y="310" width="140" height="4" rx="2" fill="#EEEEEE"/>
+  <circle cx="510" cy="312" r="6" fill="#C850C0"/>
+  
+  <rect x="510" y="330" width="140" height="30" rx="5" fill="#F6F6F6"/>
+  <text x="530" y="350" font-family="Arial" font-size="12" fill="#333333">Track Title</text>
+  
+  <rect x="510" y="370" width="140" height="30" rx="5" fill="#F6F6F6"/>
+  <text x="530" y="390" font-family="Arial" font-size="12" fill="#333333">Artist Name</text>
+  
+  <rect x="510" y="410" width="140" height="30" rx="5" fill="#F6F6F6"/>
+  <rect x="510" y="450" width="140" height="30" rx="5" fill="#F6F6F6"/>
+  
+  <!-- Social Proof -->
+  <text x="100" y="450" font-family="Arial" font-size="14" fill="#777777">Trusted by over 2 million users worldwide</text>
+  
+  <!-- Company Logos -->
+  <rect x="100" y="470" width="50" height="20" rx="4" fill="#EEEEEE"/>
+  <rect x="160" y="470" width="50" height="20" rx="4" fill="#EEEEEE"/>
+  <rect x="220" y="470" width="50" height="20" rx="4" fill="#EEEEEE"/>
+  <rect x="280" y="470" width="50" height="20" rx="4" fill="#EEEEEE"/>
+</svg>

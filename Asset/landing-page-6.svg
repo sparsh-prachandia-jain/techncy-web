@@ -1,0 +1,32 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Light Background -->
+  <rect width="800" height="600" fill="#F9F9F9"/>
+  
+  <!-- Organic Shapes -->
+  <path d="M0,0 Q400,200 0,400" fill="#F0FFF4" stroke="none"/>
+  <path d="M800,0 Q400,300 800,600" fill="#F0F7FF" stroke="none"/>
+  
+  <!-- Header -->
+  <rect width="800" height="80" fill="transparent"/>
+  <text x="50" y="50" font-family="Arial" font-weight="bold" font-size="24" fill="#2D3748">leafy</text>
+  
+  <!-- Navigation -->
+  <text x="500" y="50" font-family="Arial" font-size="14" fill="#2D3748">Home</text>
+  <text x="560" y="50" font-family="Arial" font-size="14" fill="#718096">About</text>
+  <text x="620" y="50" font-family="Arial" font-size="14" fill="#718096">Products</text>
+  <text x="700" y="50" font-family="Arial" font-size="14" fill="#718096">Contact</text>
+  
+  <!-- Main Content -->
+  <text x="50" y="180" font-family="Arial" font-weight="bold" font-size="44" fill="#2D3748">Eco-friendly</text>
+  <text x="50" y="230" font-family="Arial" font-weight="bold" font-size="44" fill="#48BB78">solutions</text>
+  <text x="50" y="280" font-family="Arial" font-weight="bold" font-size="44" fill="#2D3748">for your home</text>
+  
+  <rect x="50" y="310" width="40" height="4" fill="#48BB78" rx="2"/>
+  
+  <text x="50" y="350" font-family="Arial" font-size="16" fill="#4A5568" width="400">Sustainable products that help you reduce your carbon footprint while creating a beautiful living space.</text>
+  
+  <!-- CTA Button -->
+  <rect x="50" y="400" width="200" height="55" rx="27.5" fill="#48BB78"/>
+  <text x="150" y="435" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Shop Now</text>
+  
+  <!-- Secondary CTA

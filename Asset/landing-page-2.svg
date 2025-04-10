@@ -1,0 +1,62 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Split Layout -->
+  <rect width="400" height="600" fill="#222831"/>
+  <rect x="400" width="400" height="600" fill="#ffffff"/>
+  
+  <!-- Left Side Content -->
+  <rect x="80" y="60" width="100" height="30" fill="#00ADB5" rx="4"/>
+  <text x="130" y="80" font-family="Arial" font-size="16" fill="white" text-anchor="middle">BRAND</text>
+  
+  <text x="80" y="170" font-family="Arial" font-weight="bold" font-size="40" fill="white">Design with</text>
+  <text x="80" y="220" font-family="Arial" font-weight="bold" font-size="40" fill="#00ADB5">Confidence</text>
+  
+  <rect x="80" y="250" width="40" height="6" fill="#00ADB5" rx="3"/>
+  
+  <text x="80" y="300" width="300" font-family="Arial" font-size="16" fill="#EEEEEE">Create stunning interfaces that engage users and drive conversions with our comprehensive design system.</text>
+  
+  <rect x="80" y="360" width="180" height="50" fill="#00ADB5" rx="25"/>
+  <text x="170" y="390" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Start Designing</text>
+  
+  <!-- Stats -->
+  <text x="100" y="470" font-family="Arial" font-weight="bold" font-size="36" fill="white">1M+</text>
+  <text x="100" y="495" font-family="Arial" font-size="14" fill="#EEEEEE">Active Users</text>
+  
+  <text x="220" y="470" font-family="Arial" font-weight="bold" font-size="36" fill="white">10k+</text>
+  <text x="220" y="495" font-family="Arial" font-size="14" fill="#EEEEEE">Templates</text>
+  
+  <text x="320" y="470" font-family="Arial" font-weight="bold" font-size="36" fill="white">24/7</text>
+  <text x="320" y="495" font-family="Arial" font-size="14" fill="#EEEEEE">Support</text>
+  
+  <!-- Right Side Content -->
+  <text x="500" y="60" font-family="Arial" font-size="14" fill="#222831">Home</text>
+  <text x="560" y="60" font-family="Arial" font-size="14" fill="#666666">Features</text>
+  <text x="630" y="60" font-family="Arial" font-size="14" fill="#666666">Templates</text>
+  <text x="710" y="60" font-family="Arial" font-size="14" fill="#666666">Pricing</text>
+  
+  <!-- Product Preview -->
+  <rect x="460" y="120" width="280" height="380" fill="#F8FAFF" rx="10"/>
+  
+  <!-- Dashboard Preview -->
+  <rect x="480" y="140" width="240" height="30" fill="white" stroke="#EEEEEE" stroke-width="1"/>
+  <circle cx="500" cy="155" r="10" fill="#00ADB5"/>
+  <rect x="520" y="150" width="60" height="10" fill="#EEEEEE" rx="2"/>
+  
+  <rect x="480" y="180" width="240" height="150" fill="white" stroke="#EEEEEE" stroke-width="1"/>
+  <rect x="500" y="200" width="200" height="15" fill="#EEEEEE" rx="2"/>
+  <rect x="500" y="225" width="120" height="15" fill="#EEEEEE" rx="2"/>
+  <rect x="500" y="250" width="200" height="60" fill="#EEEEEE" rx="2"/>
+  
+  <rect x="480" y="340" width="115" height="140" fill="white" stroke="#EEEEEE" stroke-width="1"/>
+  <rect x="500" y="360" width="75" height="10" fill="#EEEEEE" rx="2"/>
+  <rect x="500" y="380" width="75" height="10" fill="#EEEEEE" rx="2"/>
+  <rect x="500" y="400" width="75" height="60" fill="#EEEEEE" rx="2"/>
+  
+  <rect x="605" y="340" width="115" height="140" fill="white" stroke="#EEEEEE" stroke-width="1"/>
+  <rect x="625" y="360" width="75" height="10" fill="#EEEEEE" rx="2"/>
+  <rect x="625" y="380" width="75" height="10" fill="#EEEEEE" rx="2"/>
+  <rect x="625" y="400" width="75" height="60" fill="#EEEEEE" rx="2"/>
+  
+  <!-- Call to Action -->
+  <text x="600" y="550" font-family="Arial" font-size="18" fill="#222831" text-anchor="middle">Ready to transform your design process?</text>
+  <rect x="500" y="565" width="200" height="15" fill="#EEEEEE" rx="2"/>
+</svg>
