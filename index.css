@@ -6,10 +6,10 @@
 }
 
 :root {
-  --primary: #E2EFF1;
-  --secondary: #e2f1f0;
-  --accent: #D8C4B6;
-  --text: #213555;
+ --primary: #7421e1;
+    --secondary: #e2f1f0;
+    --accent: #D8C4B6;
+    --text: #ffffff;
 }
 
 html,
@@ -76,11 +76,11 @@ nav a:hover {
 }
 
 .btn {
-  background: var(--text);
+  background: var(--secondary);
   border: none;
   padding: 15px;
   border-radius: 10px;
-  color: var(--secondary);
+  color: var(--text);
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
