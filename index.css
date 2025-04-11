@@ -36,6 +36,7 @@ header {
   margin-top: 5px;
     margin-bottom: 15px;
     margin-left: 70px;
+  background-color:red;
     margin-right: 70px;
   position: fixed;
   width: calc(100vw - 140px);
