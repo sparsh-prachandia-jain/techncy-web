@@ -29,7 +29,7 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.2);
   /* box-shadow: 0 8px 32px 0 #00000024; */
   border-radius: 10px;
-  line-height: 1;
+  line-height: 0;
   padding: 10px 2vw;
   display: flex;
   justify-content: space-between;
