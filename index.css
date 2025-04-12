@@ -7,7 +7,7 @@
 
 :root {
  --primary: #d9d6dd;;
-    --secondary: #1c1448;
+    --secondary: #5d516d;
     --accent: #D8C4B6;
     --text: #000;
 }
@@ -299,12 +299,12 @@ nav a:hover {
 .highlight-box h2 {
   font-family: "Big Shoulders Stencil", sans-serif;
   font-size: 2rem;
-   color: #fff;
+   color: #000;
   text-align: start;
 }
 
 .highlight-box span {
-  color: #fff;
+  color: #000;
   font-family: "Big Shoulders Stencil", sans-serif;
 
   display: inline-block;
@@ -313,7 +313,7 @@ nav a:hover {
 
 .highlight-box p {
   font-weight: 500;
-   color: #fff;
+   color: #000;
   font-family: "Roboto Slab", serif;
   line-height: 1.6;
 }
