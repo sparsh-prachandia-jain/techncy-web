@@ -1,83 +1,125 @@
-// Create animated particles
-    function createParticles() {
-      const body = document.querySelector('body');
-      const particleCount = 30;
-      
-      for (let i = 0; i < particleCount; i++) {
-        const particle = document.createElement('div');
-        particle.classList.add('particle');
-        
-        // Random size between 2px and 6px
-        const size = Math.random() * 4 + 2;
-        particle.style.width = `${size}px`;
-        particle.style.height = `${size}px`;
-        
-        // Random position
-        particle.style.left = `${Math.random() * 100}%`;
-        particle.style.top = `${Math.random() * 100}%`;
-        
-        // Random animation
-        const duration = Math.random() * 20 + 10;
-        particle.style.animation = `floating ${duration}s infinite ease-in-out`;
-        
-        // Custom keyframe animation for each particle
-        const keyframes = `
-          @keyframes floating {
-            0% {
-              transform: translate(0, 0) rotate(0deg);
-              opacity: ${Math.random() * 0.5 + 0.1};
-            }
-            50% {
-              transform: translate(${Math.random() * 100 - 50}px, ${Math.random() * 100 - 50}px) rotate(${Math.random() * 360}deg);
-              opacity: ${Math.random() * 0.7 + 0.3};
-            }
-            100% {
-              transform: translate(0, 0) rotate(0deg);
-              opacity: ${Math.random() * 0.5 + 0.1};
-            }
-          }
-        `;
-        
-        const style = document.createElement('style');
-        style.textContent = keyframes;
-        document.head.appendChild(style);
-        
-        body.appendChild(particle);
-      }
+function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    const toggle = document.querySelector(".menu-toggle");
+
+    toggle.classList.toggle("open");
+    if (menu.style.display === "flex") {
+      gsap.to(menu, { opacity: 0, y: -20, duration: 0.3, onComplete: () => menu.style.display = "none" });
+    } else {
+      menu.style.display = "flex";
+      gsap.fromTo(menu, { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.3 });
     }
-    
-    // Launch date countdown
-    function updateCountdown() {
-      // Set your launch date here (YYYY, MM-1, DD)
-      const launchDate = new Date(2025, 6, 1); // July 1, 2025
-      const now = new Date();
-      const diff = launchDate - now;
-      
-      if (diff <= 0) {
-        document.getElementById('countdown').textContent = "We're launching soon!";
-        return;
-      }
-      
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-      
-      document.getElementById('countdown').textContent = 
-        `${days} days : ${hours} hours : ${minutes} mins : ${seconds} secs`;
-    }
-    
-    // Initialize
-    document.addEventListener('DOMContentLoaded', function() {
-      createParticles();
-      updateCountdown();
-      setInterval(updateCountdown, 1000);
-      
-      // Form submission (prevent default for demo)
-      document.querySelector('.email-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const email = document.querySelector('.email-input').value;
-        alert(`Thank you! We'll notify ${email} when we launch.`);
-        document.querySelector('.email-input').value = '';
+  }
+
+  gsap.from("header", {
+    y: -100,
+    scale:0,
+    opacity: 0,
+    duration: 1.7,
+    ease: "power4.out"
+  });
+
+  gsap.from(".tagline", {
+    xPercent: -50,
+    opacity: 0,
+    duration: 1,
+    delay: 0.4
+  });
+  
+  gsap.from(".headline", {
+    xPercent: -50,
+    opacity: 0,
+    duration: 1,
+    delay: 0.4
+  });
+  
+  gsap.from(".subtext", {
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    delay: 0.6
+  });
+  
+  gsap.from(".cta-button", {
+    scale: 0.8,
+    opacity: 0,
+    duration: 0.8,
+    delay: 0.8
+  });
+  gsap.from(".photo-gallery", {
+    scale: 0.8,
+    opacity: 0,
+    duration: 0.8,
+    delay: 1
+  });
+
+  // Horizontal Gallery Animations
+  gsap.utils.toArray('.photo-item').forEach((item, i) => {
+    gsap.from(item, {
+      scrollTrigger: {
+        trigger: '.gallery-container',
+        start: "left 80%",
+        end: "right 20%",
+        toggleActions: "play none none none",
+        horizontal: true,
+        scrub: 0.5
+      },
+      x: 100,
+      opacity: 0,
+      duration: 0.8,
+      delay: i * 0.1,
+      ease: "power2.out"
+    });
+  });
+
+  // Parallax effect on hover
+  document.querySelectorAll('.photo-item').forEach(item => {
+    item.addEventListener('mousemove', (e) => {
+      const x = e.clientX - item.getBoundingClientRect().left;
+      const y = e.clientY - item.getBoundingClientRect().top;
+      gsap.to(item, {
+        x: (x - item.offsetWidth/2) * 0.1,
+        y: (y - item.offsetHeight/2) * 0.1,
+        duration: 0.5
       });
     });
+
+    item.addEventListener('mouseleave', () => {
+      gsap.to(item, {
+        x: 0,
+        y: 0,
+        duration: 0.5
+      });
+    });
+  });
+
+  document.querySelectorAll('nav a').forEach(link => {
+    
+    if (link.getAttribute('id') !='ch'){
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+  
+        if(targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    }
+    
+  });
+  document.querySelectorAll('.mobile-menu a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
