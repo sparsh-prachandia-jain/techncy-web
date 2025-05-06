@@ -10,6 +10,8 @@ function toggleMenu() {
       gsap.fromTo(menu, { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.3 });
     }
   }
+document.addEventListener("DOMContentLoaded", () => {
+  // your GSAP code here
 
   gsap.from("header", {
     y: -100,
@@ -83,7 +85,7 @@ function toggleMenu() {
         duration: 0.5
       });
     });
-
+});
     item.addEventListener('mouseleave', () => {
       gsap.to(item, {
         x: 0,
